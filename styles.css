@@ -1,0 +1,141 @@
+/* Flexbox Part 1 */
+
+#flex-section1 ul {
+	display: flex; /* Use Flexbox layout */
+	justify-content: space-between; /*Distribute elements evenly within the container, creating equal spacing */
+	list-style: none; /* Remove the default styles of list items */
+	padding: 0; /* Remove the padding of the list */
+	margin: 52px; /* Set a margin of 52 pixels */
+}
+
+/* end Flexbox Part 1 */
+
+
+/* Flexbox Part 2 */
+
+#flex-section2 ul {
+	display: flex;
+	list-style: none; /* Remove the default styles of list items */
+	padding: 0; /* Remove the padding of the list */
+}
+
+#flex-section2 li {
+	flex:1;/* Set the flex property to 1, allowing list items to distribute space equally */
+    text-align: left;/* Align text to the left within list items */
+}
+
+#flex-section2 .item1 {
+	order: 1;
+}
+
+#flex-section2 .item2 {
+	order: 3;
+}
+
+#flex-section2 .item3 {
+	order: 2;
+}
+
+/* end Flexbox Part 2 */
+
+
+/* Flexbox Part 3 */
+
+#flex-section3 .box {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#flex-section3 .tags ul {
+	display: flex;
+	list-style: none; 
+	padding: 0; 
+	flex-wrap: wrap; /* Allow items to wrap automatically */
+}
+
+/* end Flexbox Part 3 */
+
+
+/* Grid Part 1 */
+
+#grid-section1 .grid {
+	display: grid; 
+	grid-template-columns: repeat(4, 1fr); /* Create 4 columns with equal distribution of available space */
+	grid-template-rows: repeat(2, 100px); /* Create 2 rows with a fixed height of 100 pixels each */
+	grid-gap: 20px; /* Set a gap of 20 pixels between grid items */
+	grid-auto-flow: row;  /* Automatically flow grid items in rows (vertically) */
+} 
+
+
+/* end Grid Part 1 */
+
+
+/* Grid Part 2 */
+
+#grid-section2 .gridboxblue {
+	grid-row: 1 / span 3;
+	grid-column: 2 / span 2;
+	z-index: 1;
+}
+
+#grid-section2 .gridboxred {
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 2;
+}
+
+/* end Grid Part 2 */
+
+
+/* Grid Part 3 */
+
+#grid-section3 .grid {
+	display: grid;
+	grid-template-columns: 2fr 1fr; /* 2 columns with fractional widths */
+	grid-template-rows: 100px 300px 100px; /* 3 rows with specified heights */
+	grid-gap: 10px; /* 10px gap between rows and columns */
+}
+
+#grid-section3 .box1 {
+	grid-row: 1 / span 1;
+	grid-column: 1 / span 2;
+}
+
+#grid-section3 .box2 {
+	grid-row: 2 / span 1;
+	grid-column: 2 / span 1;
+}
+
+#grid-section3 .box3 {
+	grid-row: 2 / span 1;
+	grid-column: 1 / span 1;
+}
+
+#grid-section3 .box4 {
+	grid-row: 3 / span 1;
+	grid-column: 1 / span 2;
+}
+
+/* end Grid Part 3 */
+
+
+/* Transition Part */
+
+#transition-section .box a {
+	display: inline-block;
+	background-color: #ccc;
+	color: #000;
+	padding: 20px;
+	text-decoration: none;
+	transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+#transition-section .box a:hover {
+	background-color: #cc0000;
+	color: #fff;
+	transition: background-color 0.5s ease, color 0.5s ease;
+
+}
+
+/* end Transition Part */
